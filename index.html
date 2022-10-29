@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Convertisseur de devises</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body class="acceuil-page">
+    <header>
+        <div class="navigation">
+            <h1>Bienvenue dans le convertisseur</h1>
+        </div>
+
+        <!--NAVIGATION-->
+
+        <main class="container">
+            <div>
+                <section id="acceuil">
+                    <h2>1- Choisir le type de convertisseur que vous souhaitez effectuer:</h2>
+                    <ol class="list-choice">
+                        <li><a class="link-nav btn-choice" href="#monnaie">Monnaies</a></li>
+                        <li><a class="link-nav btn-choice" href="#longeurs">Longeurs</a></li>
+                        <li><a class="link-nav btn-choice" href="#poids">Poids</a></li>
+                    </ol>
+        <!--FONCTIONNEMENT-->
+                    <h2>2- Une fois dans la page du type de convertisseur choisit, vous aurez les choix de conversion:
+                    </h2>
+                    <ul>
+                        <li>Monnaies:</li>
+                        <ol>
+                            <li>Dollars en Euro (1 USD = 0.87325 EUR)</li>
+                            <li>Euro en Dollars (1 EUR = 1.14515 USD)</li>
+                            <li>Dollars en Dollars Canadien (1 USD = 1.25124 CAD)</li>
+                            <li>Dollars Canadien en Dollars (1 CAD = 0.79921 USD)</li>
+                            <li>Euro en Dollars Canadien (1 EUR = 1.43315 CAD)</li>
+                            <li>Dollars Canadien en Euro (1 CAD = 0.69776 EUR)</li>
+                        </ol> <br>
+                        <li>Longueurs:</li>
+                        <ol>
+                            <li>Pouces en Centimetres (pouces * 2,54)</li>
+                            <li>Centimetres en Pouces (cm / 2,54)</li>
+                            <li>Kilometre en Miles (km * 0.62137)</li>
+                            <li>Miles en Kilometres (miles/0.62137)</li>
+                        </ol> <br>
+                        <li>Poids:</li>
+                        <ol>
+                            <li>Livres en Kilogrammes (lb/2.2046)</li>
+                            <li>Kilogrammes en Livres (kg * 2.2046)</li>
+                        </ol>
+                    </ul>
+            </div>
+            </section>
+           <!--CONVERTISSEURS MONNAIE-->
+            <section id="monnaie" class="section-convertisseur">
+                <h3>Voici le convertisseur de monnaies</h3>
+
+                <div class="form">
+                    <form>
+                        <div form-items>
+                            <label>Veuillez saisir un montant:</label>
+                            <input id="amount" type="text">
+                            <label>De la devise:</label>
+                            <select id="fromCurrency">
+                            </select><br>
+
+                            <label>Vers la devise:</label>
+                            <select id="toCurrency">
+                            </select><br>
+                            <button type="button" onclick="conversionCurrency()" id="button"
+                                class="button">Convertir</button><br>
+                            <a class="backToMenu" href="#acceuil">Retour au menu</a>
+                        </div>
+                    </form>
+                    <div id="divResultMoney" class="divResult">
+
+
+                    </div>
+
+
+                    <div id="divErrorMoney" class="divError">
+
+                    </div>
+
+                </div>
+            </section>
+            <!--CONVERTISSEURS LONGEURS-->
+            <section id="longeurs" class="section-convertisseur">
+                <h3>Voici le convertisseur de longeurs</h3>
+
+                <div class="form">
+                    <form>
+                        <div form-items>
+                            <label>Veuillez saisir une valeur:</label>
+                            <input id="valueLength" type="text">
+                            <label>De l'unité:</label>
+                            <select id="fromLength">
+                            </select><br>
+
+                            <label>Vers l'unité:</label>
+                            <select id="toLength">
+                            </select><br>
+                            <button type="button" onclick="conversionLength()" id="button"
+                                class="button">Convertir</button><br>
+                            <a class="backToMenu" href="#acceuil">Retour au menu</a>
+                        </div>
+                    </form>
+                    <div id="divResultLength" class="divResult">
+
+
+                    </div>
+
+
+                    <div id="divErrorLength" class="divError">
+
+                    </div>
+
+                </div>
+            </section>
+          <!--CONVERTISSEURS POIDS-->
+            <section id="poids" class="section-convertisseur">
+                <h3>Voici le convertisseur de poids</h3>
+
+                <div class="form">
+                    <form>
+                        <div form-items>
+                            <label>Veuillez saisir une valeur:</label>
+                            <input id="valueWeight" type="text">
+                            <label>De l'unité:</label>
+                            <select id="fromWeight">
+                            </select><br>
+
+                            <label>Vers l'unité:</label>
+                            <select id="toWeight">
+                            </select><br>
+                            <button type="button" onclick="conversionWeight()" id="button"
+                                class="button">Convertir</button><br>
+                            <a class="backToMenu" href="#acceuil">Retour au menu</a>
+                        </div>
+                    </form>
+                    <div id="divResultWeight" class="divResult">
+
+
+                    </div>
+
+
+                    <div id="divErrorWeight" class="divError">
+
+                    </div>
+
+                </div>
+            </section>
+
+
+        </main>
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

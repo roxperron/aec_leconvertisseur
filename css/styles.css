@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+body {
+	color: #2791AE;
+	font-family: "Lusitana", serif;
+	font-size: xx-large;
+
+}
+
+.acceuil-page {
+	background-color: #F1F2F3;
+
+}
+
+.list-choice li {
+	display: inline-block;
+	padding: 5px;
+
+}
+
+.btn-choice {
+	border: thin #F1F2F3 solid;
+	background-color: #F1F2F3;
+	border-radius: 5px;
+	font-family: "Playball", serif;
+
+}
+
+
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	color: #4271B1;
+}
+
+
+
+.link-nav {
+	text-decoration: none;
+	color: #4271B1;
+}
+
+.link-nav:hover {
+	color: #F3AC23;
+}
+
+h1,
+h2 {
+	font-family: "Playball", serif;
+	color: #2791AE;
+}
+
+h3 {
+	font-family: "Playball", serif;
+	color: #F3AC23;
+
+}
+
+.section-convertisseur {
+	border: #F3AC23 solid 2px;
+	background-color: #2791AE;
+	border-radius: 5px;
+	color: #4271B1;
+	padding: 50px;
+	margin: 50px 0;
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+label {
+	display: inline-block;
+	padding: 5px;
+	font-family: "Playball", serif;
+	color: #F3AC23;
+}
+
+input,
+textarea,
+select,
+option {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	font-family: "Lusitana", serif;
+	color: #2791AE;
+	margin: 5px;
+	padding: 5px;
+	border: thin #2791AE solid;
+}
+
+input:focus {
+	background: #4271B1;
+}
+
+
+select:focus {
+	background: #4271B1;
+}
+
+
+
+
+
+.button {
+	border: #4271B1 solid 2px;
+	border-radius: 5px;
+	color: #F1F2F3;
+	background-color: #4271B1;
+	text-align: center;
+	margin: 10px;
+}
+
+.button:hover {
+	color: #2791AE;
+}
+
+.backToMenu {
+	border: #4271B1 solid 2px;
+	border-radius: 5px;
+	color: #F1F2F3;
+	background-color: #4271B1;
+	padding-left: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.backToMenu:hover {
+	color: #F3AC23;
+}
+
+.divResult {
+	color: white;
+	font-family: "Lusitana", serif;
+	font-size: xx-large;
+	font-style: italic;
+	font-weight: bold;
+	border-radius: 10px;
+	margin-top: 20px;
+	padding: 50px 50px;
+}
+
+.divError {
+	color: white;
+	font-family: "Lusitana", serif;
+	font-size: xx-large;
+	font-style: italic;
+	font-weight: bold;
+	border-radius: 10px;
+	margin-top: 20px;
+	padding: 50px 50px;
+}
