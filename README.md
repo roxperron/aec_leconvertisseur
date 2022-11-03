@@ -3,4 +3,4 @@ The Converter is the final project of the Web Programming 1 course. This project
 
 
 See the website : 
-[(https://roxperron.github.io/Convertisseur/)](https://roxperron.github.io/Convertisseur/)
+https://roxperron.github.io/Convertisseur/
